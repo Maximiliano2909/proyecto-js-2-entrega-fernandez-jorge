@@ -14,7 +14,7 @@ const picada4 =new producto(4,"picada4",5000)
 const productos= [picada1,picada2,picada3,picada4]
 console.log(productos);
 
-let productoEscogido = prompt("Escoge el producto que deseas comprar:picada1,picada2,picada3,picada4")
+let productoEscogido = prompt("Escoge el producto que deseas comprar:picada1($2000),picada2($3000),picada3($4000),picada4($5000")
 let seguirComprando = true
 
 const carrito =[]
@@ -26,12 +26,12 @@ while(seguirComprando === true){
 if(producto){
     carrito.push(producto)
 }else{
-    productoEscogido = prompt("Escoge un producto correcto:picada1,picada2,picada3,picada4")
+    productoEscogido = prompt("Escoge un producto correcto:picada1($2000),picada2($3000),picada3($4000),picada4($5000")
     continue
 }
 const decision = prompt("desea seguir comprando? si-no")
 if(decision==="si"){
-    productoEscogido =prompt ("Escoge el producto que deseas comprar: picada1,picada2,picada3,picada4")
+    productoEscogido =prompt ("Escoge el producto que deseas comprar: picada1($2000),picada2($3000),picada3($4000),picada4($5000")
 }else{
     seguirComprando = false
     console.log(carrito);
@@ -45,4 +45,4 @@ let totalCompra = 0
 for (const producto of carrito){
     totalCompra = totalCompra + producto.precio
 }
-alert("El total de tus compa es: "+totalCompra)
+alert("El total de tus compra es: "+totalCompra)

@@ -34,6 +34,8 @@ if(decision==="si"){
     productoEscogido =prompt ("Escoge el producto que deseas comprar: picada1,picada2,picada3,picada4")
 }else{
     seguirComprando = false
+    console.log(carrito);
+    
 }
 
 }
